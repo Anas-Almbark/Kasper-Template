@@ -1,0 +1,151 @@
+/* Media Responsive For Mobile Screen  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Media Responsive For Medium Screen  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Media Responsive For Large Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* For Section Header */
+@media (min-width: 768px) {
+  header .container nav .toggle-menu {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  header .container nav ul {
+    display: none;
+  }
+  header .container nav .toggle-menu:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 70%);
+  }
+  header .container nav ul li a {
+    padding: 15px !important;
+  }
+}
+/* For Section Landing */
+@media (max-width: 767px) {
+  .landing .text {
+    width: 100%;
+  }
+  .landing .text .content {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .landing .change-background {
+    display: none;
+  }
+}
+/* For Section Services */
+@media (min-width: 767px) {
+  .services .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 60px 40px;
+  }
+}
+
+/* For Section Portfolio */
+@media (min-width: 768px) {
+  .portfolio .content-portfolio .box-pro {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 1199px) {
+  .portfolio .content-portfolio .box-pro {
+    flex-basis: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .portfolio .container .shuffle {
+    display: block;
+  }
+  .portfolio .container .shuffle li {
+    margin: 10px 0 0 0;
+  }
+}
+/* For Section statistics */
+@media (max-width: 767px) {
+  .statistics .container .box {
+    flex-basis: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .statistics .container .box {
+    flex-basis: 50%;
+  }
+}
+
+/* For Section Skills */
+@media (max-width: 767px) {
+  .our-skills .testimonials .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .our-skills .testimonials .content img {
+    margin: 0 auto 30px;
+  }
+  .our-skills .testimonials .content .text > div {
+    margin-bottom: 30px;
+  }
+}
+/* For Section Subscribe */
+@media (max-width: 991px) {
+  .subscribe .container {
+    flex-direction: column;
+  }
+  .subscribe p {
+    margin: 40px 0 0 0;
+  }
+}
+/* For Section Contact Us */
+@media (max-width: 767px) {
+  .contact-us .content {
+    flex-direction: column;
+  }
+  .contact-us .content form {
+    order: 2;
+  }
+  .contact-us .content .info {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9f5f5;
+  }
+  .contact-us .content .info .address,
+  .contact-us .content .info .touch {
+    padding: 20px;
+  }
+  .contact-us .content .info .address {
+    border-left: 2px solid #fff;
+  }
+  .contact-us .content .info .address h4 {
+    margin: 0;
+  }
+}
+@media (max-width: 420px) {
+  .contact-us .content .info {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-us .content .info .address{
+    border-top: 2px solid #fff;
+  }
+}
